@@ -1,1 +1,1 @@
-Project which manages your contacts
+# Connectify-SCM

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html   lang="en" 
+        th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}"
+>
+<head>
+    <title data-th-text="${loggedInUser.name}+' |  Dashboard'">Dashboard Page</title>
+</head>
+<body>
+
+    <div  id="content">
+
+      <!-- user is logged in SIDE_BAR -->
+       <div th:if="${loggedInUser}">
+        <div data-th-replace="~{user/sidebar::sidebar}">
+        </div>
+       </div>
+
+        <div class="sm:pl-64 pt-20" style="height: 1000px;">
+            <h1 class="text-5xl">Welcome to Dashboard page</h1>
+        </div>
+    </div>
+
+    
+    
+    <!--flow bite content-->
+    <script>
+        console.log("this is profile Page")
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+</body>
+</html>

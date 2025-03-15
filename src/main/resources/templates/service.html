@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html   lang="en" 
+        th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}"
+>
+<head>
+    <title>Service Page</title>
+</head>
+<body>
+    <div id="content">
+        <h1>Welcome to Service page</h1>
+    </div>
+    
+    <!--flow bite content-->
+    <script>
+        console.log("Service Page")
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+</body>
+</html>
